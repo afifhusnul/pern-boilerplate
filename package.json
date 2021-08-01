@@ -1,0 +1,32 @@
+{
+  "name": "pg-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node ./bin/www",
+    "server": "nodemon app.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"nodemon start\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.7",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "morgan-body-ext": "^1.2.1",
+    "pg": "^8.6.0",
+    "rotating-file-stream": "^2.1.5",
+    "uuid": "^8.3.2",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  }
+}

@@ -1,0 +1,16 @@
+PG_USER=user
+PG_PASS=password
+PG_HOST=192.xxx.xx.xx
+PG_PORT=5432
+PG_DB=db_pg
+
+CORS_ORIGIN=http://192.xx.xx.xx:port
+
+NODE_ENV = production_or_sit
+JWT_SECRET = the-token-secret-for-auth-123-456-7890
+encryptKey='vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3'
+#--------------
+JWT_EXPIRES_IN = 30m
+
+DB_URL='postgres://userdb:pwdb@localhost:5432/boilerplate'
+DATABASE_URL='postgres://userdb:pwdb@localhost:5432/boilerplate'
