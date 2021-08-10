@@ -20,7 +20,7 @@ const Modal = ({ show, onClose, children, title }) => {
     <div className={styles.overlay}>
       <div className={styles.wrapper}>
         <div className={styles.modal}>
-          <div className={styles.header}>
+          <div className={styles.header}>{title}
             <a href="#" onClick={handleClose}>
               <button className="btn">Close</button>
             </a>

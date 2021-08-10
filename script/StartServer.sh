@@ -9,6 +9,5 @@ logFolder=/home/$USER/www/logs
 #tmux new-session \; \split-window -h 
 tmux new -d -s todoSession \; \split-window -h
 tmux send-keys -t todoSession.0 "pm2 start $baseFolder/script/backend.sh" ENTER
-# tmux send-keys -t todoSession.1 "tail -f $baseFolder/log/access.log" ENTER
 tmux send-keys -t todoSession.1 "tail -f $logFolder/origin-access.log" ENTER
 tmux a -t todoSession.0

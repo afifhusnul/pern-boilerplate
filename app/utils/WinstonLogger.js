@@ -22,6 +22,7 @@ const createLogger = winston.createLogger({
     new (winston.transports.Console),
   //   new (winston.transports.File)(options.errorFile),
   //   new (winston.transports.File)(options.file)
+    new transports.DailyRotateFile(options(moduleObj).dailyRotateFile)
   ],
   
   exitOnError: false, // do not exit on handled exceptions
